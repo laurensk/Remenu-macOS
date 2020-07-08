@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import EventKit
 
 struct ContentView: View {
     
@@ -18,19 +19,20 @@ struct ContentView: View {
         HStack {
             TextField("Add task", text: $taskName).textFieldStyle(RoundedBorderTextFieldStyle())
             Button(action: {
-                
+                self.addTask()
             }) {
                 Text("Add Task")
             }
-            Button(action: {
-                self.showSettings.toggle()
-            }) {
-                Text("􀍟")
-            }
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
-        .padding()
+            .padding()
             .popover(isPresented: $showSettings) {
                 Text("Select List").frame(width: 200, height: 200)
+        }
+    }
+    
+    func addTask() {
+        if !self.taskName.isEmpty {
+            EventHelpers.eh.addTask(taskName: self.taskName)
         }
     }
 }
