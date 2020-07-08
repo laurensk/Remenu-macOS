@@ -8,11 +8,14 @@
 
 import Cocoa
 import SwiftUI
+import HotKey
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     var popover = NSPopover.init()
     var statusBar: StatusBarController?
+    
+    let hotKey = HotKey(key: .space, modifiers: [.option])
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the contents
@@ -25,6 +28,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         // Create the Status Bar Item with the Popover
         statusBar = StatusBarController.init(popover)
+        
+        hotKey.keyDownHandler = {
+            self.statusBar?.togglePopover(sender: self)
+        }
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
