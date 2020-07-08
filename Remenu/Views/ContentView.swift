@@ -21,6 +21,7 @@ struct ContentView: View {
             Button(action: {
                 self.addTask()
                 HideHelpers.hide()
+                self.taskName = ""
             }) {
                 Text("Add Task")
             }
