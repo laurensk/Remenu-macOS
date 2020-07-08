@@ -16,6 +16,7 @@
 		0D50EFA824B6440900B26C9B /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50EFA724B6440900B26C9B /* EventMonitor.swift */; };
 		0D50EFAA24B6441D00B26C9B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50EFA924B6441D00B26C9B /* MainViewController.swift */; };
 		0D50EFAC24B64ED300B26C9B /* EventHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50EFAB24B64ED300B26C9B /* EventHelpers.swift */; };
+		0D889EAD24B6521400AD8696 /* MenuBarHideHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D889EAC24B6521400AD8696 /* MenuBarHideHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		0D50EFA724B6440900B26C9B /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		0D50EFA924B6441D00B26C9B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0D50EFAB24B64ED300B26C9B /* EventHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHelpers.swift; sourceTree = "<group>"; };
+		0D889EAC24B6521400AD8696 /* MenuBarHideHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarHideHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				0D50EFAB24B64ED300B26C9B /* EventHelpers.swift */,
+				0D889EAC24B6521400AD8696 /* MenuBarHideHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				0D50EFAC24B64ED300B26C9B /* EventHelpers.swift in Sources */,
 				0D50EF8F24B6438E00B26C9B /* AppDelegate.swift in Sources */,
 				0D50EFA824B6440900B26C9B /* EventMonitor.swift in Sources */,
+				0D889EAD24B6521400AD8696 /* MenuBarHideHelpers.swift in Sources */,
 				0D50EFAA24B6441D00B26C9B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

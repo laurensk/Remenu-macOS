@@ -17,11 +17,17 @@ struct ContentView: View {
     
     var body: some View {
         HStack {
-            TextField("Add task", text: $taskName).textFieldStyle(RoundedBorderTextFieldStyle())
+            TextField("Task", text: $taskName).textFieldStyle(RoundedBorderTextFieldStyle())
             Button(action: {
                 self.addTask()
+                HideHelpers.hide()
             }) {
                 Text("Add Task")
+            }
+            Button(action: {
+                NSApplication.shared.terminate(self)
+            }) {
+                Text("Quit")
             }
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding()
